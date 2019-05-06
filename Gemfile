@@ -23,7 +23,7 @@ group :development, :test do
 	gem 'sqlite3'
 end
 
-groud :production do
+group :production do
 	# Postgres DB interface
 	#gem 'pg'
 end
