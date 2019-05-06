@@ -11,14 +11,19 @@ gem 'sinatra-jsonp'
 # ORM to interact with db
 gem 'activerecord'
 gem 'require_all'
-# Postgres DB interface
-gem 'pg'
 
 # Active record helpers
 gem 'sinatra-activerecord'
+gem 'rake' #mostly for activerecord tasks
 
 
-group :development do
+group :development, :test do
 	gem 'shotgun'
 	gem 'thin'
+	gem 'sqlite3'
+end
+
+groud :production do
+	# Postgres DB interface
+	#gem 'pg'
 end
