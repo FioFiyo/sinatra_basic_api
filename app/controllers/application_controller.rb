@@ -26,7 +26,7 @@ class ApplicationController < Sinatra::Base
 	end
 
 	#API endpoints to fetch a JSON response
-	get '/apiv1/' do
+	get '/apiv1' do
 		JSONP return_template
 	end
 
